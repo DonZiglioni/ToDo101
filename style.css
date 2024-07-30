@@ -1,0 +1,213 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(64, 58, 158);
+    background: radial-gradient(circle, rgba(64, 58, 158, 1) 0%, rgba(46, 101, 173, 1) 50%, rgba(95, 0, 133, 1) 100%);
+    background-size: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border: 2px solid black;
+    height: auto;
+    width: 700px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(144deg, rgba(242, 161, 252, .7) 0%, rgba(252, 199, 255, .7) 36%, rgba(247, 132, 255, .7) 66%, rgba(236, 189, 255, .7) 100%);
+}
+
+.head-section {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    font-family: monospace;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px rgba(139, 0, 163, 0.5);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -40px;
+    border: 2px solid black;
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.input {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 2px solid black;
+    background-color: rgba(158, 250, 255, .7);
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.input:hover {
+    width: 402px;
+    height: 42px;
+    margin-right: -2px;
+    margin-left: 8px;
+    background-color: rgba(158, 250, 255, 1);
+
+}
+
+
+.input:focus {
+    width: 402px;
+    height: 42px;
+    margin-right: -2px;
+    margin-left: 8px;
+    border: 3px solid rgba(255, 0, 204, 0.5);
+}
+
+.button {
+    display: flex;
+    position: relative;
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-right: 10px;
+    height: 30px;
+    width: 125px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(158, 250, 255, .7);
+}
+
+.button:hover {
+    height: 35px;
+    width: 130px;
+    margin-left: 24px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: rgba(136, 255, 209, .9);
+}
+
+.button:active {
+    background-color: rgba(0, 255, 34, 0.779);
+    border: 2px solid black;
+    height: 25px;
+    width: 120px;
+    font-size: 1em;
+    margin-left: 35px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .8);
+
+
+}
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid black;
+    margin-top: 15px;
+    width: 600px;
+    height: auto;
+    background-color: rgba(158, 250, 255, .5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 40px;
+}
+
+.completedRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.checkbox {
+    margin-left: 15px;
+}
+
+.listItem {
+    margin-left: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.completed {
+    margin-left: 15px;
+    font-size: 1.25em;
+    color: gray;
+    font-weight: light;
+    text-decoration: line-through;
+    font-family: Helvetica, sans-serif
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(156, 6, 6);
+    color: white;
+    top: 10px;
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: .5px 1.5px rgba(0, 0, 0, 0.5);
+
+}
+
+.delete:hover {
+    width: 22px;
+    height: 22px;
+    top: 9px;
+    right: 19px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.delete:active {
+    background-color: rgba(255, 0, 0, 0.8);
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}

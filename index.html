@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#"> <!--No clue why I have to do this-->
+    <title>Things To-Do 101</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="head-section">
+            <h1 class="title">Things To-Do 101</h1>
+        </div>
+        <div class="input-section">
+            <input class="input" name="input" type="text" placeholder=" What's next to accomplish?">
+            <div class="button" id="button">ADD +</div>
+        </div>
+        <div class="list-section">
+            <ul id="list">
+            </ul>
+        </div>
+        <audio id="ding-add">
+            <source src="dingAdd.mp3" type="audio/mp3">
+        </audio>
+        <audio id="ding-remove">
+            <source src="dingRemove.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <audio id="ding-complete">
+        <source src="dingComplete.mp3" type="audio/mp3">
+    </audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
